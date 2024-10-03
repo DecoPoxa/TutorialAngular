@@ -1,4 +1,8 @@
-# EjRestClient
+# Tutorial 1.5 & 1.6
+
+Archivos correspondientes a los tutoriales 1.5 & 1.6 relacionados con Angular y Nodejs
+
+## Description
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
 
