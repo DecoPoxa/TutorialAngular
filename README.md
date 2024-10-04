@@ -1,6 +1,6 @@
 # Tutorial 1.5 & 1.6
 
-Archivos correspondientes a los tutoriales 1.5 & 1.6 relacionados con Angular y Nodejs
+Archivos correspondientes a los tutoriales 1.5 & 1.6 relacionados con Angular y Nodejs para SPAs
 
 ## Description
 
