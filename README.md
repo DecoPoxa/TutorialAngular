@@ -5,6 +5,7 @@ Archivos correspondientes a los tutoriales relacionados con Angular y Nodejs par
 ## Tareas Realizadas
 - Tutorial 1.5
 - Tutorial 1.6
+- Tutorial 1.7
 
 ## Description
 
