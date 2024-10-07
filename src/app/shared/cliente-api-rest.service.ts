@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ClienteApiRestService {
 
-  private static readonly BASE_URI = 'http://localhost:8080/ejemploVinos/';
+  private static readonly BASE_URI = 'http://localhost:8080/TiendaVinos/conseguirVinos';
 
   constructor (private http: HttpClient) {} // Inyectamos el servicio HttpClient
 
