@@ -8,25 +8,25 @@ import { Observable } from 'rxjs';
 })
 export class ClienteApiRestService {
 
-  private static readonly BASE_URI = 'http://localhost:8080/TiendaVinos/conseguirVinos';
+  private static readonly BASE_URI = 'http://localhost:8080/TiendaVinos/';
 
   constructor (private http: HttpClient) {} // Inyectamos el servicio HttpClient
 
   //Ejemplo de llamada retornando el cuerpo de la respuesta
   getAllVinos(){
     console.log("dentro de getAllVinos");
-    let url = ClienteApiRestService.BASE_URI;
+    let url = ClienteApiRestService.BASE_URI + "vinos";
     return this.http.get<Vino[]>(url); //Retorna el cuerpo de la respuesta
   }
 
   //Ejemplo de llamada retornando toda la respuesta
-  getAllVinos_Conresponse(): Observable<HttpResponse<Vino[]>>{
-    let url = ClienteApiRestService.BASE_URI;
+  getAllVinos_ConResponse(): Observable<HttpResponse<Vino[]>>{
+    let url = ClienteApiRestService.BASE_URI +  "vinos";
     return this.http.get<Vino[]>(url, {observe: 'response'});
   }
 
   borrarVino(id: String) : Observable<HttpResponse<any>>{
-    let url = ClienteApiRestService.BASE_URI + id;
+    let url = ClienteApiRestService.BASE_URI + "vinos/" + id;
     return this.http.delete(url, { observe: 'response', responseType: 'text'});
   }
 
@@ -36,12 +36,12 @@ export class ClienteApiRestService {
   }
 
   modificarPrecio(id : String, vino : Vino) : Observable<HttpResponse<any>>{
-    let url = ClienteApiRestService.BASE_URI + id;
+    let url = ClienteApiRestService.BASE_URI + "vinos/" + id;
     return this.http.put(url,vino,{ observe: 'response', responseType: 'text'});
   }
 
   getVino(id: String): Observable<HttpResponse<Vino>>{
-    let url = ClienteApiRestService.BASE_URI + id;
+    let url = ClienteApiRestService.BASE_URI + "vinos/" + id;
     return this.http.get<Vino>(url, {observe: 'response'});
   }
 }

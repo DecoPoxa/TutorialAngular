@@ -1,9 +1,8 @@
 export interface Vino{
-  nombre_comercial: string;
   bodega_id: Number,
   categoria: String,
   precio : Number,
-  denominación: String,
+  denominacion: String,
   id: Number,
-  nombcre_comercial: String
+  nombre_comercial: String
 }
